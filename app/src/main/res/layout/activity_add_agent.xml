@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Agent"
+    android:background="@drawable/background2">
+
+
+<TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Add Agent"
+            android:textColor="@color/black"
+            android:textSize="44dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Inputname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="24dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textgrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+            android:id="@+id/InputMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Mobile "
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintEnd_toEndOf="@+id/Inputname"
+            app:layout_constraintStart_toStartOf="@+id/Inputname"
+            app:layout_constraintTop_toBottomOf="@+id/Inputname" />
+
+        <EditText
+            android:id="@+id/Inputarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Area"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintEnd_toEndOf="@+id/Inputname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Inputname"
+            app:layout_constraintTop_toBottomOf="@+id/Inputname" />
+
+        <EditText
+            android:id="@+id/Inputusername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintEnd_toEndOf="@+id/Inputname"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/Inputname"
+            app:layout_constraintTop_toBottomOf="@+id/Inputname" />
+
+        <EditText
+            android:id="@+id/Agentpassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:lineSpacingMultiplier="2"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintEnd_toEndOf="@+id/Inputname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Inputname"
+            app:layout_constraintTop_toBottomOf="@+id/Inputname" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="204dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/Agentpassword"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="@+id/Agentpassword"
+        app:layout_constraintTop_toBottomOf="@+id/Agentpassword"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
